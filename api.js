@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     }
 
     const statsResponse = await fetch(
-      `https://www.strava.com/api/v3/clubs/SBNNrunning/stats`,
+      `https://www.strava.com/api/v3/clubs/1704055/stats`,
       {
         headers: {
           Authorization: `Bearer ${tokenData.access_token}`
