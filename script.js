@@ -2,7 +2,7 @@ async function loadStats() {
   const counter = document.getElementById("counter");
 
   try {
-    const res = await fetch("/api.js"); // or /api/strava-stats
+    const res = await fetch("/api/strava"); // or /api/strava-stats
     const text = await res.text();
 
     let data;
