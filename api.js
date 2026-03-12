@@ -7,9 +7,9 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         client_id: 210989,
-        client_secret: e95afaa733ab697697a295ef9ac1529fa84d82,
+        client_secret: 13e95afaa733ab697697a295ef9ac1529fa84d82,
         grant_type: "refresh_token",
-        refresh_token: abcfe47902d79a591895e001b9f3bcf9f8fa7a3
+        refresh_token: 6abcfe47902d79a591895e001b9f3bcf9f8fa7a3
       })
     });
 
