@@ -6,10 +6,10 @@ export default async function handler(req, res) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        client_id: process.env.STRAVA_CLIENT_ID,
-        client_secret: process.env.STRAVA_CLIENT_SECRET,
+        client_id: 210989,
+        client_secret: e95afaa733ab697697a295ef9ac1529fa84d82,
         grant_type: "refresh_token",
-        refresh_token: process.env.STRAVA_REFRESH_TOKEN
+        refresh_token: abcfe47902d79a591895e001b9f3bcf9f8fa7a3
       })
     });
 
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     }
 
     const statsResponse = await fetch(
-      `https://www.strava.com/api/v3/athletes/${process.env.STRAVA_ATHLETE_ID}/stats`,
+      `https://www.strava.com/api/v3/clubs/SBNNrunning/stats`,
       {
         headers: {
           Authorization: `Bearer ${tokenData.access_token}`
